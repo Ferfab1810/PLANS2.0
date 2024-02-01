@@ -19,23 +19,23 @@
         <label for="contrasena" class="titulos3">Contraseña(fecha de nacimiento; formato DD-MM-AAAA)</label>
         <input type="password" id="contrasena" name="contrasena" required>
         <br>
-        <input type="submit" value="Siguiente" class="boton" href="pregunta.html">
+        <input type="submit" value="Siguiente" class="boton">
     </form>
 
     <script>
         function validarFormulario() {
-            // Aquí puedes agregar la lógica de validación
-            var usuario = document.getElementById('usuario').value;
-            var contrasena = document.getElementById('contrasena').value;
+  	  var usuario = document.getElementById('usuario').value;
+    	  var contrasena = document.getElementById('contrasena').value;
 
-            // Ejemplo de validación simple ()
-            if (usuario === 'Nataly', 'nataly' && contrasena === '03-09-2005' ){
-                return true; // Permitir el envío del formulario
-            } else {
-                alert('Usuario o contraseña incorrecta niña :( Recuerda poner el signo -');
-                return false; // Evitar el envío del formulario
-            }
+    if ((usuario === 'Nataly' || usuario === 'nataly') && contrasena === '03-09-2005') {
+        // Redirigir a la página siguiente
+        window.location.href = 'pregunta.html';
+        return false; // Evitar el envío del formulario
+         } else {
+        alert('Usuario o contraseña incorrecta niña :( Recuerda poner el signo -');
+        return false; // Evitar el envío del formulario
         }
+}
     </script>
     </div>
 </body>
