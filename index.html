@@ -16,7 +16,7 @@
         <label for="usuario"class="titulos3">Usuario(Nombre)</label>
         <input type="text" id="usuario" name="usuario" required>
         <br>
-        <label for="contrasena" class="titulos3">Contraseña(fecha de nacimiento; formato DD-MM-AAAA)</label>
+        <label for="contrasena" class="titulos3">Contraseña(fecha de nacimiento; formato DD/MM/AAAA)</label>
         <input type="password" id="contrasena" name="contrasena" required>
         <br>
         <input type="submit" value="Siguiente" class="boton">
@@ -27,12 +27,12 @@
   	  var usuario = document.getElementById('usuario').value;
     	  var contrasena = document.getElementById('contrasena').value;
 
-    if ((usuario === 'Nataly' || usuario === 'nataly') && contrasena === '03-09-2005') {
+    if ((usuario === 'Nataly' || usuario === 'nataly') && contrasena === '03/09/2005') {
         // Redirigir a la página siguiente
         window.location.href = 'pregunta.html';
         return false; // Evitar el envío del formulario
          } else {
-        alert('Usuario o contraseña incorrecta niña :( Recuerda poner el signo -');
+        alert('Usuario o contraseña incorrecta niña :( Recuerda poner el signo /');
         return false; // Evitar el envío del formulario
         }
 }
