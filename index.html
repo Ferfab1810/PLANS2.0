@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLANS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilos.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Courgette&family=Dancing+Script&family=Fasthand&family=Lobster&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="contenedor">
+      <h1 class="titulos">Bienvenida</h1>
+    <form id="loginForm" onsubmit="return validarFormulario()" action="pregunta.html" method="post">
+        <label for="usuario"class="titulos3">Usuario(Nombre)</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br>
+        <label for="contrasena" class="titulos3">Contraseña(fecha de nacimiento; formato DD-MM-AAAA)</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <br>
+        <input type="submit" value="Siguiente" class="boton">
+    </form>
+
+    <script>
+        function validarFormulario() {
+            // Aquí puedes agregar la lógica de validación
+            var usuario = document.getElementById('usuario').value;
+            var contrasena = document.getElementById('contrasena').value;
+
+            // Ejemplo de validación simple (usuario=admin, contraseña=1234)
+            if (usuario === 'Nataly', 'nataly' && contrasena === '03-09-2005' ){
+                return true; // Permitir el envío del formulario
+            } else {
+                alert('Usuario o contraseña incorrecta niña :(');
+                return false; // Evitar el envío del formulario
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
