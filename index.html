@@ -12,7 +12,7 @@
 <body>
     <div class="contenedor">
       <h1 class="titulos">Bienvenida</h1>
-    <form id="loginForm" onsubmit="return validarFormulario()" action="pregunta.html" method="get">
+    <form id="loginForm" onsubmit="return validarFormulario()" action="pregunta.html" method="post" href="pregunta.html">
         <label for="usuario"class="titulos3">Usuario(Nombre)</label>
         <input type="text" id="usuario" name="usuario" required>
         <br>
@@ -28,7 +28,7 @@
             var usuario = document.getElementById('usuario').value;
             var contrasena = document.getElementById('contrasena').value;
 
-            // Ejemplo de validación simple (usuario=admin, contraseña=1234)
+            // Ejemplo de validación simple ()
             if (usuario === 'Nataly', 'nataly' && contrasena === '03-09-2005' ){
                 return true; // Permitir el envío del formulario
             } else {
